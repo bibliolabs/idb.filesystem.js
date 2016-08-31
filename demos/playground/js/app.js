@@ -1,5 +1,6 @@
 var filer = new Filer();
 var logger = new Logger('#log div');
+var persistent = location.search.includes('persistent');
 
 var entries = []; // Cache of current working directory's entries.
 var currentLi = 1; // Keeps track of current highlighted el for keyboard nav.
@@ -182,7 +183,7 @@ function renderEntries(resultEntries) {
 
 function openFS() {
   try {
-    filer.init({persistent: false, size: 1024 * 1024}, function(fs) {
+    filer.init({persistent: persistent, size: 1024 * 1024}, function(fs) {
       logger.log(fs.root.toURL());
       logger.log('<p>Opened: ' + fs.name, + '</p>');
 

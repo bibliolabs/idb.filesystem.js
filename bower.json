@@ -1,0 +1,19 @@
+{
+  "name": "idb.filesystem.js",
+  "homepage": "https://github.com/bibliolabs/idb.filesystem.js",
+  "authors": [
+    "Evan Muller <evanmuller@gmail.com>"
+  ],
+  "description": "",
+  "main": "demos/playground/index.html",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "build",
+    "src",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
